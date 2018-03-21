@@ -456,6 +456,7 @@
       },
       searchPlateChange(data){
         this.form.appPlatId = data
+        this.searchApp = ''
         this.getAppIdData(()=>{this.allAppIdData = {...this.appIdData}})
       },
       reset(){
@@ -471,7 +472,7 @@
 <style lang="scss" scoped>
   .header {
     overflow: hidden;
-    height:40px;
+    height:45px;
     margin-bottom: 30px;
     h1 {
       float: left;
@@ -480,6 +481,7 @@
     }
     .search {
       float: left;
+      padding: 0;
     }
   }
   .installBtn {
@@ -497,5 +499,4 @@
 
     }
   }
-
 </style>
